@@ -1,0 +1,1 @@
+$(document).ready(function(){$("body").removeClass("no-js"),$('a[href="#"]').on("click",function(e){e.preventDefault()}),$("input[placeholder], textarea[placeholder]").placeholder(),$(".navigation-toggle").on("click",function(e){e.preventDefault(),$("body").toggleClass("navigation-open")})}),$(window).load(function(){}),$(window).resize(function(){});

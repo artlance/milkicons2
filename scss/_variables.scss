@@ -1,0 +1,41 @@
+$footer: 100px;
+
+
+$fontSize: 16px;
+$lineHeight: 1.5;
+$spacer: 30px;                                                    $sp: $spacer;
+$fontFamily: 'SuisseBPIntl', Helvetica, Arial, sans-serif;        $ff: $fontFamily;
+//$fontFamily: Times, Georgia, serif;                             $ff: $fontFamily;
+
+
+$duration: 0.2s;                                                 $d: $duration;
+$function: cubic-bezier(0.4, 0.0, 0.2, 1);                        $f: $function;
+$function-reverse: cubic-bezier(0.2, 0.0, 0.4, 1);                $fr: $function-reverse;
+
+
+$primary: #000000;                                                $p: $primary;
+$secondary: #000000;                                              $s: $secondary;
+$tertiary: #000000;                                               $t: $tertiary;
+
+
+$text: #1e1d25;                                                   $txt: $text;
+$link: #0079e8;                                                   $l: $link;
+$link-hover: #ef343b;                                             $lh: $link-hover;
+$focus: #93c0ee;                                                  $fo: $focus;
+
+
+$white: #ffffff;                                                  $w: $white;
+$black: #000000;                                                  $b: $black;
+$dark-gray: #333333;                                              $dgr: $dark-gray;
+$gray: #727d86;                                                   $gr: $gray;
+$light-gray: #ecedf0;                                             $lgr: $light-gray;
+$green: #00c100;                                                  $gn: $green;
+$red: #ef343b;                                                    $r: $red;
+$transparent: transparent;                                        $tr: $transparent;
+
+
+$default: #f00;
+$success: #00c100;
+$info: #0079e8;
+$warning: #f0ad4e;
+$error: #ef343b;

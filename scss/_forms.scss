@@ -1,0 +1,130 @@
+/* forms */
+.error {
+    color: $error !important;
+    border-color: $error !important;
+}
+.success {
+    color: $success !important;
+    border-color: $success !important;
+}
+.disabled {
+    color: $gray !important;
+    border-color: $gray !important;
+    cursor: default !important;
+}
+input.input-text {
+    width: 100%;
+    float: left;
+    border-radius: 0;
+    transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f;
+}
+textarea.textarea {
+    @extend input.input-text;
+    font-family: $fontFamily;
+    overflow: auto;
+    height: auto;
+}
+select.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+select.select::-ms-expand {
+    display: none;
+}
+.checkbox,
+.radio {
+    display: block;
+    input {
+        display: none;
+        &:checked + label {
+        }
+        &:disabled + label {
+        }
+    }
+    label {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:before {
+            transition: box-shadow $d $f;
+        }
+        &:focus {
+            &:before {
+                box-shadow: 0 0 0 3px $focus;
+            }
+        }
+    }
+}
+a.button,
+input.button,
+button.button {
+    display: inline-block;
+    padding: $spacer/2 $spacer;
+    transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f;
+    &:focus {
+        box-shadow: 0 0 0 3px $focus;
+    }
+}
+input.button,
+button.button {
+    line-height: normal;
+}
+.search-form {
+    max-width: 506px;
+    margin: 0 auto 34px;
+}
+.search-row {
+    position: relative;
+}
+input.search-input-text {
+    float: left;
+    width: 100%;
+    border: 0;
+    border-bottom: solid 1px #dbdae6;
+    border-radius: 0;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    height: 32px;
+    padding: 0 35px 0 10px;
+    letter-spacing: 0.2px;
+    transition: border-color $d $f;
+    color: $text;
+    &:focus {
+        border-bottom-color: #1e1d25;
+    }
+}
+input.search-input-text::-webkit-input-placeholder {
+  color: #b4b3be;
+}
+input.search-input-text::-moz-placeholder {
+  color: #b4b3be;
+}
+input.search-input-text:-ms-input-placeholder {
+  color: #b4b3be;
+}
+input.search-input-text:-moz-placeholder {
+  color: #b4b3be;
+}
+input.search-input-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    border-radius: 0;
+    text-indent: -9999px;
+    width: 45px;
+    height: 31px;
+    background: transparent 13px 7px no-repeat;
+    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2215%22%20viewBox%3D%220%200%2016%2015%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Esearch%20icon%3C%2Ftitle%3E%3Cg%20stroke%3D%22%23979797%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Ccircle%20cx%3D%226.5%22%20cy%3D%226.5%22%20r%3D%225.75%22%2F%3E%3Cpath%20d%3D%22M11.5%2010.5l3%203%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+    background-size: 16px 15px;
+    transition: background $d $fr;
+    &:hover {
+        background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2215%22%20viewBox%3D%220%200%2016%2015%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Esearch%20icon%3C%2Ftitle%3E%3Cg%20stroke%3D%22%231E1D25%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Ccircle%20cx%3D%226.5%22%20cy%3D%226.5%22%20r%3D%225.75%22%2F%3E%3Cpath%20d%3D%22M11.5%2010.5l3%203%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+    }
+}

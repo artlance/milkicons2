@@ -1,0 +1,89 @@
+/* footer */
+.footer-global {
+    padding: 119px 0 64px;
+}
+.footer-sub-navigation {
+    padding: 0 0 0 60px;
+}
+.menu-tertiary {
+    font-size: 12px;
+    line-height: 1.66;
+    li {
+        margin-bottom: 13px;
+    }
+    a {
+        color: #828286;
+        &:hover {
+            color: $text;
+        }
+    }
+}
+.footer-content {
+    color: #828286;
+    font-size: 12px;
+    line-height: 1.41;
+    letter-spacing: 0.2px;
+    max-width: 272px;
+    padding-left: 22px;
+}
+.copyright {
+    color: #B4B3BE;
+    font-size: 12px;
+    line-height: 1.41;
+    letter-spacing: 0.2px;
+    padding: 97px 0 0 22px;
+}
+.menu-secondary {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.41;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 39px;
+    li {
+        margin: 0 21px 21px;
+    }
+    a {
+        color: $text;
+        display: block;
+        &:hover {
+            color: #382828;
+        }
+    }
+}
+.scroll-top-block {
+    text-align: right;
+    padding: 83px 60px 0 0;
+}
+.scroll-top {
+    border: 1px solid #D5D7DD;
+    height: 40px;
+    line-height: 38px;
+    font-size: 13px;
+    border-radius: 20px;
+    color: #382828;
+    display: inline-block;
+    padding: 0 49px 0 23px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 17px;
+        margin-top: -5px;
+        width: 10px;
+        height: 12px;
+        background: transparent 0 0 no-repeat;
+        background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2212%22%20viewBox%3D%220%200%2010%2012%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ECombined%20Shape%3C%2Ftitle%3E%3Cpath%20d%3D%22M4.503%203.597L2.46%205.639a.5.5%200%200%201-.708%200l-.647-.647a.5.5%200%200%201%200-.708l3.187-3.187a.498.498%200%200%201%20.138-.262L5.08.187a.5.5%200%200%201%20.416-.143.5.5%200%200%201%20.415.143l.648.648c.074.074.12.166.138.262l3.187%203.187a.5.5%200%200%201%200%20.708l-.647.647a.5.5%200%200%201-.707%200l-2.11-2.11v7a.5.5%200%200%201-.5.5h-.916a.5.5%200%200%201-.5-.5V3.598z%22%20fill%3D%22%23382828%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+        background-size: 10px 12px;
+        transition: background $d $fr;
+    }
+    &:hover {
+        border-color: #382828;
+        background-color: #382828;
+        color: $white;
+        &:before {
+            background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2212%22%20viewBox%3D%220%200%2010%2012%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ECombined%20Shape%3C%2Ftitle%3E%3Cpath%20d%3D%22M4.503%203.597L2.46%205.639a.5.5%200%200%201-.708%200l-.647-.647a.5.5%200%200%201%200-.708l3.187-3.187a.498.498%200%200%201%20.138-.262L5.08.187a.5.5%200%200%201%20.416-.143.5.5%200%200%201%20.415.143l.648.648c.074.074.12.166.138.262l3.187%203.187a.5.5%200%200%201%200%20.708l-.647.647a.5.5%200%200%201-.707%200l-2.11-2.11v7a.5.5%200%200%201-.5.5h-.916a.5.5%200%200%201-.5-.5V3.598z%22%20fill%3D%22%23ffffff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+        }
+    }
+}
